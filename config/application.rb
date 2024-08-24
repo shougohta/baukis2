@@ -7,7 +7,7 @@ Bundler.require(*Rails.groups)
 module Baukis2
   class Application < Rails::Application
     config.load_defaults 6.0
-
+    config.hosts << "localhost"
 
     config.time_zone = "Tokyo"
     config.i18n.load_path +=
