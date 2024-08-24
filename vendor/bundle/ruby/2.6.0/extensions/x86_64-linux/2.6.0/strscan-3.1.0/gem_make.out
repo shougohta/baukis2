@@ -1,0 +1,33 @@
+current directory: /apps/baukis2/vendor/bundle/ruby/2.6.0/gems/strscan-3.1.0/ext/strscan
+/usr/local/bin/ruby -I /usr/local/lib/ruby/2.6.0 -r ./siteconf20240812-181-1cysxx2.rb extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... no
+creating Makefile
+
+current directory: /apps/baukis2/vendor/bundle/ruby/2.6.0/gems/strscan-3.1.0/ext/strscan
+make "DESTDIR=" clean
+
+current directory: /apps/baukis2/vendor/bundle/ruby/2.6.0/gems/strscan-3.1.0/ext/strscan
+make "DESTDIR="
+compiling strscan.c
+strscan.c: In function 'rb_reg_onig_match':
+strscan.c:554:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     OnigPosition result = match(reg, str, regs, args);
+     ^~~~~~~~~~~~
+strscan.c: In function 'strscan_do_scan':
+strscan.c:626:9: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+         OnigPosition ret = rb_reg_onig_match(pattern,
+         ^~~~~~~~~~~~
+strscan.c: In function 'strscan_named_captures':
+strscan.c:1535:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+     named_captures_data data;
+     ^~~~~~~~~~~~~~~~~~~
+strscan.c: At top level:
+cc1: warning: unrecognized command line option '-Wno-self-assign'
+cc1: warning: unrecognized command line option '-Wno-parentheses-equality'
+cc1: warning: unrecognized command line option '-Wno-constant-logical-operand'
+linking shared-object strscan.so
+
+current directory: /apps/baukis2/vendor/bundle/ruby/2.6.0/gems/strscan-3.1.0/ext/strscan
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 strscan.so ./.gem.20240812-181-1nv9mxa
