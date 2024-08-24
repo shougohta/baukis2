@@ -38,5 +38,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem "rspec-rails"
-  gem "factory_bot_rails"
+  gem "factory_bot_rails", "6.4.3"
+  gem "factory_bot", "6.4.3"
 end
